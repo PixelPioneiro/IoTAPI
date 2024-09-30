@@ -28,9 +28,8 @@ namespace IoTAPI.Models
         [StringLength(1000, MinimumLength = 10, ErrorMessage = "O campo senha de ter no minimo 10 caracteres")]
         public string Senha { get; set; }
 
-        [Required]
-        [StringLength(1, MinimumLength = 1, ErrorMessage = "O campo deve conter 1 caracter")]
-        public string Permission { get; set; }
+        [Required(ErrorMessage = "O campo é obrigatório")]
+        public Permission Permission { get; set; }
 
         //Construtor User
         public User()

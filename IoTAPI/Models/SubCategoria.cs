@@ -15,12 +15,18 @@ namespace IoTAPI.Models
         public string ? Descricao { get; set; } = "";
 
         [Required(ErrorMessage = "O campo categoria e obrigatorio.")]
-        public string CategoriaId { get; set; }
+        public Guid CategoriaId { get; set; }
 
-        [Required]
-        public bool Ativo { get; set; } = true;
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        public Ativo Ativo { get; set; }
 
         //Relacionamento Entity Framework
         public Categoria Categoria { get; set; }
+
+        //Construtor
+        public SubCategoria()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

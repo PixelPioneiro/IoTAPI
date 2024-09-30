@@ -11,13 +11,13 @@ namespace IoTAPI.Models
         [StringLength(50, MinimumLength = 3, ErrorMessage = "O campo deve conter entre 3 e 50 caracteres.")]
         public string Nome { get; set; }
 
-        [Required]
-        public bool Ativo { get; set; } = true;
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        public Ativo Ativo { get; set; }
 
         //Construtor Categoria
         public Categoria() 
         {
-            this.Id = Guid.NewGuid();
+            Id = Guid.NewGuid();
         }
     }
 }

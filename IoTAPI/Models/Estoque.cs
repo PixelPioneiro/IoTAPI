@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IoTAPI.Models
 {
@@ -25,21 +26,23 @@ namespace IoTAPI.Models
         public DateTime DataCriacao { get; set; }
 
         [Required(ErrorMessage = "O campo quantidade e obrigatorio.")]
-        public double QuantidadeIn {  get; set; } = 0;
+        [Column(TypeName = "decimal(7,2)")]
+        public decimal QuantidadeIn {  get; set; } = 0;
 
         [Required(ErrorMessage = "O campo data e obrigatorio.")]
         [DataType(DataType.DateTime)]
         public DateTime DataIn {  get; set; }
 
         [Required(ErrorMessage = "O campo quantidade e obrigatorio.")]
-        public double QuantidadeOut { get; set; } = 0;
+        [Column(TypeName = "decimal(7,2)")]
+        public decimal QuantidadeOut { get; set; } = 0;
 
         [Required(ErrorMessage = "O campo data e obrigatorio.")]
         [DataType(DataType.DateTime)]
         public DateTime DataOut { get; set; }
 
-        [Required]
-        public bool Ativo { get; set; } = true;
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        public Ativo Ativo { get; set; }
 
         //Relacionamento Entity Framework
         public Produto Produto { get; set; }
