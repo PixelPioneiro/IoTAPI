@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Migrations\\20241001022858_Correcao2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IoTAPI\\Migrations\\20241001022858_Correcao2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|c:\\users\\rafael\\source\\repos\\iotapi\\iotapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|solutionrelative:iotapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|c:\\users\\rafael\\source\\repos\\iotapi\\iotapi\\models\\catsub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|solutionrelative:iotapi\\models\\catsub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|c:\\users\\rafael\\source\\repos\\iotapi\\iotapi\\models\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|solutionrelative:iotapi\\models\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|c:\\users\\rafael\\source\\repos\\iotapi\\iotapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|solutionrelative:iotapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|c:\\users\\rafael\\source\\repos\\iotapi\\iotapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|solutionrelative:iotapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|c:\\users\\rafael\\source\\repos\\iotapi\\iotapi\\models\\subcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5111F8AC-EAE8-4A2F-B1F5-7288804C1DC1}|IoTAPI\\IoTAPI.csproj|solutionrelative:iotapi\\models\\subcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20241001022858_Correcao2.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Migrations\\20241001022858_Correcao2.cs",
+              "RelativeDocumentMoniker": "IoTAPI\\Migrations\\20241001022858_Correcao2.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Migrations\\20241001022858_Correcao2.cs",
+              "RelativeToolTip": "IoTAPI\\Migrations\\20241001022858_Correcao2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:28:58.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "IoTAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\User.cs",
+              "RelativeToolTip": "IoTAPI\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:24:47.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SubCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\SubCategoria.cs",
+              "RelativeDocumentMoniker": "IoTAPI\\Models\\SubCategoria.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\SubCategoria.cs",
+              "RelativeToolTip": "IoTAPI\\Models\\SubCategoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:24:39.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "IoTAPI\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\Produto.cs",
+              "RelativeToolTip": "IoTAPI\\Models\\Produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:24:34.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Estoque.cs",
               "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\Estoque.cs",
               "RelativeDocumentMoniker": "IoTAPI\\Models\\Estoque.cs",
               "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\Estoque.cs",
               "RelativeToolTip": "IoTAPI\\Models\\Estoque.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T16:52:35.543Z",
+              "WhenOpened": "2024-10-01T02:24:27.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatSub.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\CatSub.cs",
+              "RelativeDocumentMoniker": "IoTAPI\\Models\\CatSub.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\CatSub.cs",
+              "RelativeToolTip": "IoTAPI\\Models\\CatSub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:24:22.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "IoTAPI\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\IoTAPI\\IoTAPI\\Models\\Categoria.cs",
+              "RelativeToolTip": "IoTAPI\\Models\\Categoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:24:17.657Z",
               "EditorCaption": ""
             }
           ]

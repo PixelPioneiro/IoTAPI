@@ -31,6 +31,9 @@ namespace IoTAPI.Models
         [Required(ErrorMessage = "O campo é obrigatório")]
         public Permission Permission { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório.")]
+        public Ativo Ativo { get; set; }
+
         //Construtor User
         public User()
         {

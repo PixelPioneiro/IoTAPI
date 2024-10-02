@@ -19,7 +19,7 @@ namespace IoTAPI.Models
         public Guid UserId { get; set; }
 
         [Required(ErrorMessage = "O campo id e obrigatorio.")]
-        public List<Produto> ProdutoId { get; set; }
+        public Guid ProdutoId { get; set; }
 
         [Required(ErrorMessage = "O campo data e obrigatorio.")]
         [DataType(DataType.DateTime)]
