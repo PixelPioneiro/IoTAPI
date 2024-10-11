@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "qrKd3r4nZFgx+loQQj340OS/N+NwleLAeNB7kcXS26U=",
+  "Hash": "o8+69Utwzq1XD2b2m25myx4YYidsWdXCArq/VAtpvU4=",
   "Source": "IoTAPI",
   "BasePath": "_content/IoTAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

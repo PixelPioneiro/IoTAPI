@@ -17,5 +17,20 @@ namespace IoTAPI.Data
         public DbSet<SubCategoria> SubCategoria { get; set; }
         public DbSet<User> User { get; set; }
 
+        public DbSet<UserEstoque> UserEstoque { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email).IsUnique();
+            modelBuilder.Entity<Categoria>()
+                .HasIndex(c => c.Nome).IsUnique();
+            modelBuilder.Entity<SubCategoria>()
+                .HasIndex(s => s.Nome).IsUnique();
+            modelBuilder.Entity<Produto>()
+                .HasIndex(p => p.Nome).IsUnique();
+        }
+
     }
 }

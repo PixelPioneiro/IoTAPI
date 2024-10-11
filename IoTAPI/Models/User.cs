@@ -1,11 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace IoTAPI.Models
 {
+    [PrimaryKey(nameof(UserId), nameof(Email))]
     public class User
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
+
+        [Required(ErrorMessage = "O campo e-mail é obrigatório.")]
+        [EmailAddress(ErrorMessage = "O e-mail não é válido")]
+        [StringLength(100, ErrorMessage = "O campo deve ter até 100 caracteres")]
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "O campo nome e obrigatorio")]
         [StringLength(50,MinimumLength = 3, ErrorMessage = "O campo nome deve ter de 3 a 50 caracteres")]
@@ -16,11 +23,6 @@ namespace IoTAPI.Models
         public string Sobrenome { get; set; }
 
         [Required]
-        [EmailAddress]
-        [StringLength(100, ErrorMessage = "O campo email deve ter de ate 100 caracteres")]
-        public string Email { get; set; }
-
-        [Required]
         [StringLength(50, MinimumLength = 5, ErrorMessage = "O campo login deve ter de 5 a 50 caracteres")]
         public string Login { get; set; }
 
@@ -29,15 +31,10 @@ namespace IoTAPI.Models
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "O campo é obrigatório")]
-        public Permission Permission { get; set; }
+        public Permission Permission { get; set; } = Permission.User;
 
-        [Required(ErrorMessage = "O campo é obrigatório.")]
-        public Ativo Ativo { get; set; }
+        public Ativo Ativo { get; set; } = Ativo.Ativo;
 
-        //Construtor User
-        public User()
-        {
-            Id = Guid.NewGuid();
-        }
+        public User() => UserId = Guid.NewGuid();
     }
 }

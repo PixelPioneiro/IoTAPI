@@ -1,11 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IoTAPI.Models
 {
     public class CatSub
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid CatSubId { get; set; }
 
         [Required(ErrorMessage = "Este campo é obrigatório.")]
         public Guid CategoriaId { get; set; }
@@ -13,18 +15,16 @@ namespace IoTAPI.Models
         [Required(ErrorMessage = "Este campo é obrigatório.")]
         public Guid SubCategoriaId { get; set; }
 
-        [Required(ErrorMessage = "O campo é obrigatório.")]
-        public Ativo Ativo { get; set; }
+        public Ativo Ativo { get; set; } = Ativo.Ativo;
 
         //Relacionamento Entity Framework
+        [ForeignKey("CategoriaId")]
         public Categoria Categoria { get; set; }
+        [ForeignKey("SubCategoriaId")]
         public SubCategoria SubCategoria { get; set; }
 
         //Construtor CatSub
-        public CatSub()
-        {
-            Id = Guid.NewGuid();
-        }
+        public CatSub() => CatSubId = Guid.NewGuid();
 
     }
 }

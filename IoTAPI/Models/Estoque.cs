@@ -6,7 +6,7 @@ namespace IoTAPI.Models
     public class Estoque
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid EstoqueId { get; set; }
 
         [Required(ErrorMessage = "O campo nome e obrigatorio.")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "O campo deve conter entre 3 e 50 caracteres.")]
@@ -16,14 +16,14 @@ namespace IoTAPI.Models
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "O campo usuario e obrigatorio.")]
-        public Guid UserId { get; set; }
+        public Guid UserEstoqueId { get; set; }
 
         [Required(ErrorMessage = "O campo id e obrigatorio.")]
-        public Guid ProdutoId { get; set; }
+        public List<Produto> Produto { get; set; }
 
         [Required(ErrorMessage = "O campo data e obrigatorio.")]
-        [DataType(DataType.DateTime)]
-        public DateTime DataCriacao { get; set; }
+        [DataType(DataType.DateTime)] 
+        public DateTime DataCriacao { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "O campo quantidade e obrigatorio.")]
         [Column(TypeName = "decimal(7,2)")]
@@ -31,7 +31,7 @@ namespace IoTAPI.Models
 
         [Required(ErrorMessage = "O campo data e obrigatorio.")]
         [DataType(DataType.DateTime)]
-        public DateTime DataIn {  get; set; }
+        public DateTime DataIn {  get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "O campo quantidade e obrigatorio.")]
         [Column(TypeName = "decimal(7,2)")]
@@ -39,19 +39,13 @@ namespace IoTAPI.Models
 
         [Required(ErrorMessage = "O campo data e obrigatorio.")]
         [DataType(DataType.DateTime)]
-        public DateTime DataOut { get; set; }
+        public DateTime DataOut { get; set; } = DateTime.Now;
 
-        [Required(ErrorMessage = "O campo é obrigatório.")]
-        public Ativo Ativo { get; set; }
+        public Ativo Ativo { get; set; } = Ativo.Ativo;
 
         //Relacionamento Entity Framework
-        public Produto Produto { get; set; }
-        public User User { get; set; }
+        public UserEstoque UserEstoque { get; set; }
 
-        //Construtor Estoque
-        public Estoque()
-        {
-            Id = Guid.NewGuid();
-        }
+        public Estoque() => EstoqueId = Guid.NewGuid();
     }
 }
