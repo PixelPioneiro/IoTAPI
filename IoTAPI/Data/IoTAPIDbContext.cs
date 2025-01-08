@@ -31,6 +31,5 @@ namespace IoTAPI.Data
             modelBuilder.Entity<Produto>()
                 .HasIndex(p => p.Nome).IsUnique();
         }
-
     }
 }

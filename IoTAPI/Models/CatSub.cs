@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IoTAPI.Models
@@ -19,9 +18,9 @@ namespace IoTAPI.Models
 
         //Relacionamento Entity Framework
         [ForeignKey("CategoriaId")]
-        public Categoria Categoria { get; set; }
+        public Categoria Categoria { get; set; } = null;
         [ForeignKey("SubCategoriaId")]
-        public SubCategoria SubCategoria { get; set; }
+        public SubCategoria SubCategoria { get; set; } = null;
 
         //Construtor CatSub
         public CatSub() => CatSubId = Guid.NewGuid();

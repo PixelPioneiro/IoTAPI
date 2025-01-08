@@ -8,7 +8,7 @@ var connectionString = builder.Configuration.GetConnectionString("ConnectionPost
 builder.Services.AddDbContext<IoTAPIDbContext>(options => options.UseNpgsql(connectionString));
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

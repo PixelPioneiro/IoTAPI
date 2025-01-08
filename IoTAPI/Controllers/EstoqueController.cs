@@ -78,7 +78,7 @@ namespace IoTAPI.Controllers
             {
                 var estoque = _context.Estoque.Find(id);
 
-                if (estoque.EstoqueId == id && !id.Equals("") && !id.Equals(null))
+                if (estoque != null && estoque.EstoqueId == id)
                 {
                     _context.Estoque.Remove(estoque);
                     var valor = _context.SaveChanges();

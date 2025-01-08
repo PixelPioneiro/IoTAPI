@@ -71,14 +71,14 @@ namespace IoTAPI.Controllers
                 return BadRequest($"Erro, usuário não alterado. Exceção: {ex.Message}");
             }
         }
-        [HttpDelete("{id:guid}/{email:string}")]
+        [HttpDelete("{id:guid}/{email}")]
         public IActionResult DeleteUser([FromRoute] Guid id, string email)
         {
             try
             {
                 var user = _context.User.Find(id, email);
 
-                if (user.Email == email && user.UserId == id)
+                if (user != null && user.Email == email && user.UserId == id)
                 {
                     _context.User.Remove(user);
                     var valor = _context.SaveChanges();

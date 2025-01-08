@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace IoTAPI.Models
 {
@@ -9,9 +7,9 @@ namespace IoTAPI.Models
         [Key]
         public Guid CategoriaId { get; set; }
 
-        [Required(ErrorMessage = "O campo nome é obrigatório." )]
+        [Required(ErrorMessage = "O campo nome é obrigatório.")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "O campo deve conter entre 3 e 50 caracteres.")]
-        public string Nome { get; set; }
+        public required string Nome { get; set; }
 
         [StringLength(300, ErrorMessage = "O campo deve conter entre ate 300 caracteres.")]
         public string ? Descricao { get; set; } = "";

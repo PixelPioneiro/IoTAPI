@@ -71,14 +71,14 @@ namespace IoTAPI.Controllers
                 return BadRequest($"Erro, UserEstoque não alterada. Exceção: {ex.Message}");
             }
         }
-        [HttpDelete("{id:guid}/{nome:string}")]
+        [HttpDelete("{id:guid}/{nome}")]
         public IActionResult DeleteUserEstoque([FromRoute] Guid id)
         {
             try
             {
                 var userEstoque = _context.UserEstoque.Find(id);
 
-                if (userEstoque.UserEstoqueId == id && !id.Equals("") && !id.Equals(null))
+                if (userEstoque != null && userEstoque.UserEstoqueId == id)
                 {
                     _context.UserEstoque.Remove(userEstoque);
                     var valor = _context.SaveChanges();

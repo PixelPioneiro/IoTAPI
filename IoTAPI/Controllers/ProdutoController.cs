@@ -79,7 +79,7 @@ namespace IoTAPI.Controllers
             {
                 var produto = _context.Produto.Find(id);
 
-                if (produto.ProdutoId == id)
+                if (produto != null && produto.ProdutoId == id)
                 {
                     _context.Produto.Remove(produto);
                     var valor = _context.SaveChanges();

@@ -71,14 +71,14 @@ namespace IoTAPI.Controllers
                 return BadRequest($"Erro, subcategoria não alterada. Exceção: {ex.Message}");
             }
         }
-        [HttpDelete("{id:guid}/{nome:string}")]
+        [HttpDelete("{id:guid}/{nome}")]
         public IActionResult DeleteSubCategoria([FromRoute] Guid id, string nome)
         {
             try
             {
                 var subcategoria = _context.SubCategoria.Find(id, nome);
 
-                if (subcategoria.Nome == nome && subcategoria.SubCategoriaId == id)
+                if (subcategoria != null && subcategoria.Nome == nome && subcategoria.SubCategoriaId == id)
                 {
                     _context.SubCategoria.Remove(subcategoria);
                     var valor = _context.SaveChanges();
